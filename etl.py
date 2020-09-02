@@ -17,7 +17,7 @@ from sql_queries import *
 #Connect to database
 
 
-conn = psycopg2.connect("host=P{} dbname=sparkifydb user={} password={}".format(config.host_port, config.user, config.password))
+conn = psycopg2.connect("host={} dbname=sparkifydb user={} password={}".format(config.host_port, config.user, config.password))
 cur = conn.cursor()
 
 #Define function to get all files in a directory
