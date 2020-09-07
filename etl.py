@@ -13,16 +13,6 @@ import numpy
 from psycopg2.extensions import register_adapter, AsIs
 from sql_queries import *
 
-
-import os
-import glob
-import psycopg2
-import pandas as pd
-import numpy
-from sql_queries import *
-from psycopg2.extensions import register_adapter, AsIs
-
-
 def process_song_file(cur, filepath):
     '''
     Loads song files using pandas and inserts the appropraite records into the song and artist tables
