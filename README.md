@@ -15,6 +15,7 @@ Select the first 5 records from each table to ensure that records were correctly
 '''
 
 %sql SELECT * FROM songplays LIMIT 5;
+
 %sql SELECT * FROM users LIMIT 5;
 
 '''
