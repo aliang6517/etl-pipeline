@@ -119,7 +119,7 @@ def addapt_numpy_int64(numpy_int64):
     return AsIs(numpy_int64)
 
 def main():
-    conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
+    conn = psycopg2.connect("host={} dbname=sparkifydb user={} password={}".format(config.host_port, config.db_name, config.user, config.password))
     cur = conn.cursor()
 
     register_adapter(numpy.float64, addapt_numpy_float64)
