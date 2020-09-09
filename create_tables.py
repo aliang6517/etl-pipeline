@@ -12,7 +12,7 @@ import config
 
 def create_database():
     # connect to default database
-    conn = psycopg2.connect("host={} dbname={sparkify user={} password={}".format(config.host_port, config.db_name, config.user, config.password))
+    conn = psycopg2.connect("host={} dbname={sparkify user={} password={}".format(config.host_port, config.user, config.password))
     conn.set_session(autocommit=True)
     cur = conn.cursor()
     
